@@ -15,18 +15,6 @@ FFaker::Internet.email  #=> "kirsten.greenholt@corkeryfisher.info"
 ```
 
 **[See more →](REFERENCE.md)**
-
-## ffaker vs faker
-
-The faker and ffaker APIs are mostly the same, although the API on ffaker keeps
-diverging with its users additions. In general, the only difference is that you
-need to:
-
-    gem install ffaker
-
-and then
-
-    require 'ffaker'
     
 ### Rails
 
@@ -34,7 +22,7 @@ and then
 
 ```ruby
 group :development, :test do
-  gem 'ffaker'
+  gem 'ffaker', :git => 'shaikhraznova/ffaker'
 end
 ```
 
